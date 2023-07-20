@@ -7,7 +7,8 @@ Guides:
 6. ignore weak warnings in PyCharm.
 7. Please make sure your have installed docx python with pip in windows console.
 
-This program is coded by Li Chung Ho, John
+This program is coded by Li Chung Ho, John.
+
 input: 
 1. >  ```docPath``` = a sample Word file
 3. >  ```imgDirPath``` = 36 images in a folder (named in format of (3))
