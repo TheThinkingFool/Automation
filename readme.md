@@ -14,4 +14,4 @@ input:
 3. >  ```imgDirPath``` = 36 images in a folder (named in format of (3))
 
 output:
-   > = ```outputPath``` , can change name
+   >  ```outputPath``` , can change name
