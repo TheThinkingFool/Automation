@@ -5,10 +5,12 @@ Guides:
 4. use the sample document to generate
 5. change the Month in the header by yourself
 6. ignore weak warnings in PyCharm.
-7. Please make sure your installed docx python with pip in windows console.
+7. Please make sure your have installed docx python with pip in windows console.
 
 This program is coded by Li Chung Ho, John
 input: 
-1. > a sample Word file = docPath
-3. 36 images in a folder (named in format of (3))     = imgDirPath
-output: = outputPath, can change name
+1. >  ```docPath``` = a sample Word file
+3. >  ```imgDirPath``` = 36 images in a folder (named in format of (3))
+
+output:
+   > = ```outputPath``` , can change name
