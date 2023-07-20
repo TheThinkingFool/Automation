@@ -8,6 +8,7 @@ Guides:
 7. Please make sure your installed docx python with pip in windows console.
 
 This program is coded by Li Chung Ho, John
-input:  a sample Word file, 36 images in a folder (named in format of (3))
-        = docPath           = imgDirPath
+input: 
+1. a sample Word file                                 = docPath
+2. 36 images in a folder (named in format of (3))     = imgDirPath
 output: = outputPath, can change name
