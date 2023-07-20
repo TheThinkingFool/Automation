@@ -15,3 +15,7 @@ input:
 
 output:
    >  ```outputPath``` , can change name
+
+```5R.py``` is used for 5R edition, please use ```ZHEC Progress photo report May - 5R (Sample).docx``` as the sample.
+
+```200times250.py``` is used for 200x250 edition, please use ```ZHEC Progress photo report May- 200x250 (Sample).docx``` as the sample.
