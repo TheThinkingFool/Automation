@@ -9,6 +9,6 @@ Guides:
 
 This program is coded by Li Chung Ho, John
 input: 
-1. a sample Word file                                 = docPath
-2. 36 images in a folder (named in format of (3))     = imgDirPath
+1. > a sample Word file = docPath
+3. 36 images in a folder (named in format of (3))     = imgDirPath
 output: = outputPath, can change name
