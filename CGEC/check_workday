@@ -1,0 +1,59 @@
+from datetime import date
+import holidays
+
+hk_holidays = holidays.HK()  # Create a Hong Kong holidays object
+
+
+def functional_test():
+    # Check if a specific date is a holiday
+    print(date(2024, 1, 1) in hk_holidays)  # Output: True (New Year's Day)
+    print(date(2024, 2, 10) in hk_holidays)  # Output: True (Lunar New Year's Day)
+
+    # Get the name of the holiday
+    print(hk_holidays.get('2024-01-01'))  # Output: "The first day of January"
+    print(hk_holidays.get('2024-02-10'))  # Output: "Lunar New Year's Day"
+    print(hk_holidays.get('2024-10-01'))  # Output: "National Day"
+
+# functional_test() work as expected.
+
+# The function is_holiday(date) is used to check if a specific date is a holiday in Hong Kong.
+# It returns True if the date is a holiday, and False otherwise.
+def is_holiday(date):
+    return date in hk_holidays
+
+# The function holiday_name(date) is used to get the name of a holiday on a specific date in Hong Kong.
+# It returns the name of the holiday if it exists, and None otherwise.
+def holiday_name(date):
+    return hk_holidays.get(date)
+
+def holiday_name_test():
+    print(holiday_name(date(2024, 1, 1)))  # Output: "The first day of January"
+    print(holiday_name(date(2024, 2, 10)))  # Output: "Lunar New Year's Day"
+    print(holiday_name(date(2024, 10, 1)))  # Output: "National Day"
+    print(f"2024-1-2: {holiday_name(date(2024, 1, 2))}")  # Output: None (Not a holiday)
+
+# The function is_sunday(date) is used to check if a specific date is a Sunday.
+# It returns True if the date is a Sunday, and False otherwise.
+def is_sunday(date):
+    return date.weekday() == 6
+
+# The function is_workday(date) is used to check if a specific date is a workday in Hong Kong.
+# It returns a tuple with two values:
+# - The first value is a boolean indicating if the date is a workday (True) or not (False).
+# - The second value is a string representing the day of the week (e.g., "Monday", "Tuesday", etc.).
+def is_workday(date):
+    if is_sunday(date):
+        return False, "Sunday"
+    elif is_holiday(date):
+        return False, holiday_name(date)
+    else:
+        return True, date.strftime("%A")
+
+def is_workday_test():
+    print(is_workday(date(2024, 1, 1)))  # Output: False (New Year's Day)
+    print(is_workday(date(2024, 2, 10)))  # Output: False (Lunar New Year's Day)
+    print(is_workday(date(2024, 10, 1)))  # Output: False (National Day)
+    print(is_workday(date(2024, 1, 2)))  # Output: True (Not a holiday)
+    print(is_workday(date(2024, 1, 3)))  # Output: True (Not a holiday)
+    print(is_workday(date(2024, 9, 28)))  # Output: True (Not a holiday)
+    print(is_workday(date(2024, 1, 7)))  # Output: False (Sunday)
