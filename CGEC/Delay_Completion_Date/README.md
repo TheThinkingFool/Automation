@@ -1,8 +1,13 @@
-Guide for using Delay_Completion_Date folder:
+Guide for using ```Delay_Completion_Date``` folder:
 
 This python program aim to read the latest completion date and no. of affected workdays in specific cells of excel file,
 and write steps and result (revised completion date) into specific cells.
 Please note that there will be multiple latest completion date due to different parts of a project.
+
+You only have to run ```main.py```, 
+choose the template excel file from file explorer,
+and input the number of parts.
+The code will automatically generate the excel file of revised completion date for the project.
 
 The excel file should have the following structure:
 1. number of parts                              (e.g. cell B3 to B11, 9 parts in total)
@@ -11,7 +16,18 @@ The excel file should have the following structure:
 4. steps for different parts                    (e.g. cell F3 to F11)
 5. revised completion date for different parts  (e.g. cell G3 to G11)
 
-You might use '''Delay Completion Date.xlsx''' as Reference.
+You might use ```Delay Completion Date.xlsx``` as Reference.
+
+Input:
+![image](https://github.com/user-attachments/assets/76297e06-049a-442c-8644-ad29b2aa2b3c)
+
+Output:
+![image](https://github.com/user-attachments/assets/1fc6a50a-d800-411a-8b8a-e464914120ba)
+
+IDE requirement:
+1. Make sure you have python installed.
+2. In the env, make sure you have two library installed, ```holidays``` and ```openpyxl```.
+3. You may install the two library with ```pip install holidays``` and ```pip install openpyxl```.
 
 definition:
 
