@@ -211,7 +211,7 @@ def replace_photos_and_variables(docx_path, output_path, image_folder, image_var
 
 
 docx_path = open_word_file_explorer()  # Path to the template DOCX file
-output_path = "output.docx"  # Path to save the updated DOCX file
+output_path = f"Monthly Progress Photos_{month_year}"  # Path to save the updated DOCX file
 image_folder = output_folder  # Path to the folder containing images with date and time
 replace_photos_and_variables(docx_path, output_path, image_folder, image_variables, date_times)
 print(f"Updated DOCX file saved to {output_path}")
