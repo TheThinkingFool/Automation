@@ -57,6 +57,8 @@ $ref_no$_$location$_$title$.jpg
 4. Select a DOCX template file. (template 4R.docx)
 5. The program will generate a new DOCX file with the updated values.
 ```output_path = f"Monthly Progress Photos_{month_year}"```
+![image](https://github.com/user-attachments/assets/4a3fe07b-58da-4910-808f-09d2e98f787d)
+
 
 ## License
 
