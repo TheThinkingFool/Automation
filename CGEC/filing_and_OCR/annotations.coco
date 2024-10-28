@@ -1,0 +1,82 @@
+{
+    "suppliers": [
+        {
+            "id": 1,
+            "name": "Supplier A"
+        },
+        {
+            "id": 2,
+            "name": "Supplier B"
+        }
+    ],
+    "annotations": {
+        "1": {
+            "supplier_id": 1,
+            "type": "date",
+            "data_type": [
+                "en"
+            ],
+            "bbox": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    50,
+                    50
+                ]
+            ]
+        },
+        "2": {
+            "supplier_id": 1,
+            "type": "name",
+            "data_type": [
+                "en"
+            ],
+            "bbox": [
+                [
+                    60,
+                    60
+                ],
+                [
+                    120,
+                    120
+                ]
+            ]
+        },
+        "3": {
+            "supplier_id": 2,
+            "type": "date",
+            "data_type": [
+                "en"
+            ],
+            "bbox": [
+                [
+                    10,
+                    10
+                ],
+                [
+                    60,
+                    60
+                ]
+            ]
+        },
+        "4": {
+            "supplier_id": 2,
+            "type": "name",
+            "data_type": [
+                "ch_tra"
+            ],
+            "bbox": [
+                [
+                    70,
+                    70
+                ],
+                [
+                    130,
+                    130
+                ]
+            ]
+        }
+    }
+}
